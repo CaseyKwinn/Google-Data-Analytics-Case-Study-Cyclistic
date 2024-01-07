@@ -1,12 +1,14 @@
 # Google Data Analytics Capstone: Cyclistic Case Study
+
+### Links:
 Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.coursera.org/learn/google-data-analytics-capstone)
+
+Data Used: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) (Jan 2022 - Dec 2022, Accessed Nov 2023)  
+
 ## Introduction
 Welcome to the Cyclistic bike-share analysis case study! In this case study, I will perform many real-world tasks of a junior data
 analyst. I will be working for a fictional company, Cyclistic, and meet different characters and team members. In order to answer the
 key business questions, I will follow the steps of the data analysis process: **ask, prepare, process, analyze, share, and act**.
-
-### Quick links:
-Data Used: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) (Jan 2022 - Dec 2022, Accessed Nov 2023)  
    
 ## Background
 ### Scenario
