@@ -38,4 +38,19 @@ I will be using Cyclistic’s historical trip data from Jan 2022 to Dec 2022 whi
 The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). These 12 files are organized by month, and have column names that include: **ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual**.
 
 ## Process
-I will be using SQL (specifically PostGreSQL) to explore, combine, clean, and analyze the data.    
+I will be using SQL (specifically PostGreSQL) to explore, combine, clean, and analyze the data.  
+
+### Data Combining
+SQL Query: [Data Combining](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Data%20Combining.sql)  
+Here the 12 csv files (202201-divvy-tripdata to 202212-divvy-tripdata) are downloaded off the data source provided and combined into a single dataset called tripdata_all, which contains 5,667,717 rows of data.
+
+### Data Exploring
+SQL Query: [Data Exploring](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Data%20Exploring.sql)  
+Here I perform some simple checks to familiarize myself with the data before moving on to cleaning and analysis.
+
+Things I checked for:  
+1. Column Types: mostly text, with some doubles for the coordinates and timestamps for the start and end times.
+
+
+2. 
+
