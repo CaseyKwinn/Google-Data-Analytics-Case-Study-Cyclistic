@@ -43,14 +43,28 @@ I will be using SQL (specifically PostGreSQL) to explore, combine, clean, and an
 ### Data Combining
 SQL Query: [Data Combining](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Data%20Combining.sql)  
 Here the 12 csv files (202201-divvy-tripdata to 202212-divvy-tripdata) are downloaded off the data source provided and combined into a single dataset called tripdata_all, which contains 5,667,717 rows of data.
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/Data%20Combining.png)
 
 ### Data Exploring
 SQL Query: [Data Exploring](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Data%20Exploring.sql)  
-Here I perform some simple checks to familiarize myself with the data before moving on to cleaning and analysis.
+Here I perform some simple checks to familiarize myself with the data before moving on to cleaning and analysis.  
 
 Things I checked for:  
 1. Column Types: mostly text, with some doubles for the coordinates and timestamps for the start and end times.
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_ColTypes.png)
 
+2. Duplicate Rows: 0 duplicates found.  
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_dupes.png)
 
-2. 
-
+3. Null Values: first check how many missing values are found in each column.
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_NullVals.png)  
+Since there's null values appear to be in paired amounts between 3 sets of 2 columns, I decided to check the consistency of null values between columns.
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_NullValsCont.png)  
+Observations:
+  - start_station_name, end_station_name, and end_lat are all synced up with start_station_id, end_station_id, and end_lng respectively. This means that in all places where start_station_name is null, start_station_id is also null, and the same is true for the other 2 pairs of columns.
+  - start_station_name and end_station_name are both null in some of the columns, but not all.
+  - All 5858 rows that are missing end_lat are also missing end_station_name, but missing an end_station_name doesn't mean end_lat will also be missing.
+ 4. Errors in member_casual: Since the member_casual column is related to our business task, I will make sure that it only contains the 2 values 'member' or 'casual', which it does.  
+    ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_MemCasErrors.png)
+ 5. Ride_id length: Finally I will make sure all values in the ride_id column are the same length, which they are  
+    ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_RideidErorrs.png)  
