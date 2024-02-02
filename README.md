@@ -62,8 +62,8 @@ Since there's null values appear to be in paired amounts between 3 sets of 2 col
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_NullValsCont.png)  
 Observations:
   - start_station_name, end_station_name, and end_lat are all synced up with start_station_id, end_station_id, and end_lng respectively. This means that in all places where start_station_name is null, start_station_id is also null, and the same is true for the other 2 pairs of columns.
-  - start_station_name and end_station_name are both null in some of the columns, but not all.
-  - All 5858 rows that are missing end_lat are also missing end_station_name, but missing an end_station_name doesn't mean end_lat will also be missing.
+  - start_station_name and end_station_name are both null in some rows, but not all.
+  - All 5858 rows that are missing end_lat are also missing end_station_name, but missing end_station_name doesn't mean end_lat will also be missing.
  4. Errors in member_casual: Since the member_casual column is related to our business task, I will make sure that it only contains the 2 values 'member' or 'casual', which it does.  
     ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_MemCasErrors.png)
  5. Ride_id length: Finally I will make sure all values in the ride_id column are the same length, which they are  
