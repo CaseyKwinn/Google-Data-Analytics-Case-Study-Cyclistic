@@ -67,4 +67,18 @@ Observations:
  4. Errors in member_casual: Since the member_casual column is related to our business task, I will make sure that it only contains the 2 values 'member' or 'casual', which it does.  
     ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_MemCasErrors.png)
  5. Ride_id length: Finally I will make sure all values in the ride_id column are the same length, which they are  
-    ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_RideidErorrs.png)  
+    ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_RideidErorrs.png)
+### Data Cleaning
+SQL Query: [Data Cleaning](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Data%20Cleaning.sql)  
+Here I make a modified version of tripdata_all called tripdata_clean with the following changes:  
+- Removed all rows with missing values
+- Added day_of_week and month columns, extracting day_of_week and month respectively from started_at timestamp
+- Added trip duration column from difference in started_at and ended_at, displayed in minutes
+- Removed outlier trips that had a trip duration of shorter than one minutes or longer than one day
+    
+Here's a view of the clean dataset:
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DCl_TripdataClean.png)  
+
+Just in case, I recheck for null values and duplicate rows, which there are none:  
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DCl_RecheckDupes.png)  
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DCl_RecheckNullVals.png)  
