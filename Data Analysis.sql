@@ -3,7 +3,11 @@
 --bike types
 SELECT member_casual, rideable_type, 
 COUNT(*) AS total_trips,
-COUNT(*) * 100.0 / (SELECT COUNT(*) FROM tripdata_clean) AS total_trips_percent
+ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) 
+ FROM tripdata_clean WHERE member_casual = 'casual'), 2) as percent_of_casual,
+ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) 
+ FROM tripdata_clean WHERE member_casual = 'member'), 2) as percent_of_member,
+ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM tripdata_clean), 2) AS percent_of_total
 FROM tripdata_clean
 GROUP BY member_casual, rideable_type
 ORDER BY member_casual, total_trips;
