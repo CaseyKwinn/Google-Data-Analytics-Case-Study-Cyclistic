@@ -82,3 +82,42 @@ Here's a view of the clean dataset:
 Just in case, I recheck for null values and duplicate rows, which there are none:  
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DCl_RecheckDupes.png)  
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DCl_RecheckNullVals.png)  
+
+## Analyze 
+SQL Query: [Data Analysis](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Data%20Analysis.sql)  
+Data Visualization: [Tableau](https://public.tableau.com/app/profile/casey.kwinn/viz/Cyclistic_CaseStudy_Visuals/AVG_Month#1)  
+Here I analyze the clean data to answer the following question: How do annual members and casual riders use Cyclistic bikes differently?  
+
+Analysis Queries:
+
+1. Total Trips by Hour:
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_TotHour.PNG)
+It appears that members have 2 spikes throughout the day - one at 8am and one around 5pm. Casual riders only have a single spike around 5pm.
+
+2. Total Trips by Day of the Week:
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_TotDow.PNG)
+Members appear to ride more often during weekdays, where as casual riders actually spike during weekends.
+
+3. Total Trips by Month:
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_TotMonth.PNG)
+Both members and casual riders ride much more during summer months than winter ones.  
+
+4. Average Ride Duration by Hour:
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_AvgHour.PNG)
+Casual riders seem to have shorter duration rides during morning and early evening hours, while members a more stable ride duration throughout the day.  
+
+5. Average Ride Duration by Day of the Week:  
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_AvgDow.PNG)  
+Both members and casual riders have slightly longer durations during the weekend, with casual riders having a larger increase.  
+
+6. Average Ride Duration by Month:  
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_AvgMonth.PNG)  
+Casual riders have a peak around the spring months, trending downwards into winter. Members have a more stable ride duration year round, with a slight peak during summer months.
+
+7. Most Common Start Locations:
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_CommonStarts.PNG)
+Casual riders tend to heavily prefer starting in popular downtown locations (especially Streeter Dr & Grand Ave), while members are much more evenly spread out throughout the city.
+
+8. Most Common End Locations:
+![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_CommonEnds.PNG)
+Very similar trends to start locations.    
