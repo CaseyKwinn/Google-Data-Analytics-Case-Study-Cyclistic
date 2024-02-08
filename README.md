@@ -120,4 +120,15 @@ Casual riders tend to heavily prefer starting in popular downtown locations (esp
 
 8. Most Common End Locations:
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_CommonEnds.PNG)
-Very similar trends to start locations.    
+Very similar trends to start locations.
+
+General Observations:  
+Casual Riders: Prefer riding on weekends in recreational areas with much longer but less frequent rides.  
+Cyclistic Members: Prefer riding regularly during commute hours of work week in commercial areas with short but frequent rides through the year.  
+
+## Act  
+Now that differences between casual riders and members have been found, here are some ideas for marketing strategies that can be used to target casual riders and incentivize them to become members:
+
+1.  Conduct marketing campaigns involving signup deals for new members. Focus these campaigns in areas like Streeter Dr & Grand Ave, as well as other popular ride locations for casual riders.  
+2.  Since casual riders prefer longer rides, offer discounts for longer rides, as well as discounts during summer months when riding is more popular.  
+3.  Advertise Cyclstic bikes as an enjoyable and effective method of commuting to work. It's much more like casual riders will purhcase a membership and behave like other members if they are made aware of the possiblilty of using bikes as a way to commute to work.  
