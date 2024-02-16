@@ -58,7 +58,7 @@ Things I checked for:
 
 3. Null Values: first check how many missing values are found in each column.
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_NullVals.png)  
-Since there's null values appear to be in paired amounts between 3 sets of 2 columns, I decided to check the consistency of null values between columns.
+Since null values appear to be in paired amounts between 3 sets of 2 columns, I decided to check the consistency of null values between columns.
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DE_NullValsCont.png)  
 Observations:
   - start_station_name, end_station_name, and end_lat are all synced up with start_station_id, end_station_id, and end_lng respectively. This means that in all places where start_station_name is null, start_station_id is also null, and the same is true for the other 2 pairs of columns.
