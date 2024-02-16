@@ -73,8 +73,8 @@ SQL Query: [Data Cleaning](https://github.com/CaseyKwinn/Google-Data-Analytics-C
 Here I make a modified version of tripdata_all called tripdata_clean with the following changes:  
 - Removed all rows with missing values
 - Added day_of_week and month columns, extracting day_of_week and month respectively from started_at timestamp
-- Added trip duration column from difference in started_at and ended_at, displayed in minutes
-- Removed outlier trips that had a trip duration of shorter than one minutes or longer than one day
+- Added trip duration column from difference between started_at and ended_at, displayed in minutes
+- Removed outlier trips that had a trip duration of shorter than one minute or longer than one day
     
 Here's a view of the clean dataset:
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DCl_TripdataClean.png)  
@@ -131,4 +131,4 @@ Now that differences between casual riders and members have been found, here are
 
 1.  Conduct marketing campaigns involving signup deals for new members. Focus these campaigns in areas like Streeter Dr & Grand Ave, as well as other popular ride locations for casual riders.  
 2.  Since casual riders prefer longer rides, offer discounts for longer rides, as well as discounts during summer months when riding is more popular.  
-3.  Advertise Cyclstic bikes as an enjoyable and effective method of commuting to work. It's much more like casual riders will purhcase a membership and behave like other members if they are made aware of the possiblilty of using bikes as a way to commute to work.  
+3.  Advertise Cyclstic bikes as an enjoyable and effective method of commuting to work. It's much more likely casual riders will purhcase a membership and behave like other members if they are made aware of the possiblilty of using bikes as a way to commute to work.  
