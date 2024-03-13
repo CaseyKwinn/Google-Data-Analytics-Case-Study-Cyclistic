@@ -104,7 +104,7 @@ Both members and casual riders ride much more during summer months than winter o
 
 4. Average Ride Duration by Hour:
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_AvgHour.PNG)
-Casual riders seem to have shorter duration rides during morning and early evening hours, while members a more stable ride duration throughout the day.  
+Casual riders seem to have shorter duration rides during morning and early evening hours, while members have more stable ride duration throughout the day.  
 
 5. Average Ride Duration by Day of the Week:  
 ![image](https://github.com/CaseyKwinn/Google-Data-Analytics-Case-Study-Cyclistic/blob/main/Output%20Images/DV_AvgDow.PNG)  
@@ -131,4 +131,4 @@ Now that differences between casual riders and members have been found, here are
 
 1.  Conduct marketing campaigns involving signup deals for new members. Focus these campaigns in areas like Streeter Dr & Grand Ave, as well as other popular ride locations for casual riders.  
 2.  Since casual riders prefer longer rides, offer discounts for longer rides, as well as discounts during summer months when riding is more popular.  
-3.  Advertise Cyclstic bikes as an enjoyable and effective method of commuting to work. It's much more likely casual riders will purhcase a membership and behave like other members if they are made aware of the possiblilty of using bikes as a way to commute to work.  
+3.  Advertise Cyclistic bikes as an enjoyable and effective method of commuting to work. It's much more likely casual riders will purhcase a membership and behave like other members if they are made aware of the possiblilty of using bikes as a way to commute to work.  
